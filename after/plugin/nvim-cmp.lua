@@ -8,4 +8,3 @@ cmp.setup({
          documentation = cmp.config.disable
     }
 })
-

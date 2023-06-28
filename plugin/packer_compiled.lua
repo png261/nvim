@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -109,16 +114,32 @@ _G.packer_plugins = {
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["gruvbox-material"] = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme gruvbox-material\bcmd\bvim\0" },
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["hardtime.nvim"] = {
+    config = { "\27LJ\2\nç\a\0\0\4\0P\0T5\0\0\0005\1\2\0005\2\1\0=\2\3\0015\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\0015\2\14\0=\2\15\0015\2\16\0=\2\17\0015\2\18\0=\2\19\0015\2\20\0=\2\21\0015\2\22\0=\2\23\0015\2\24\0=\2\25\0015\2\26\0=\2\27\0015\2\28\0=\2\29\0015\2\30\0=\2\31\0015\2 \0=\2!\0015\2\"\0=\2#\0015\2$\0=\2%\1=\1&\0005\1(\0005\2'\0=\2)\0015\2*\0=\2+\0015\2,\0=\2-\0015\2.\0=\2/\0015\0020\0=\0021\0015\0022\0=\0023\0015\0024\0=\0025\0015\0026\0=\0027\0015\0028\0=\0029\0015\2:\0=\2;\0015\2<\0=\2=\0015\2>\0=\2?\1=\1@\0005\1B\0005\2A\0=\2C\0015\2D\0=\2E\0015\2F\0=\2G\0015\2H\0=\2I\1=\1J\0005\1K\0=\1L\0006\1M\0'\3N\0B\1\2\0029\1O\1\18\3\0\0B\1\2\1K\0\1\0\nsetup\rhardtime\frequire\23disabled_filetypes\1\6\0\0\aqf\nnetrw\rNvimTree\tlazy\nmason\18disabled_keys\f<RIGHT>\1\3\0\0\5\6i\v<LEFT>\1\3\0\0\5\6i\v<DOWN>\1\3\0\0\5\6i\t<UP>\1\0\0\1\3\0\0\5\6i\20restricted_keys\n<C-P>\1\3\0\0\6n\6v\n<C-N>\1\3\0\0\6n\6v\n<C-M>\1\3\0\0\6n\6v\t<CR>\1\3\0\0\6n\6v\agk\1\3\0\0\6n\6v\agj\1\3\0\0\6n\6v\6+\1\3\0\0\6n\6v\6-\1\3\0\0\6n\6v\6l\1\3\0\0\6n\6v\6k\1\3\0\0\6n\6v\6j\1\3\0\0\6n\6v\6h\1\0\0\1\3\0\0\6n\6v\19resetting_keys\6P\1\2\0\0\6n\6p\1\2\0\0\6n\6Y\1\2\0\0\6n\6y\1\2\0\0\6n\6X\1\2\0\0\6n\6x\1\2\0\0\6n\6d\1\2\0\0\6n\6C\1\2\0\0\6n\6c\1\2\0\0\6n\0069\1\3\0\0\6n\6v\0068\1\3\0\0\6n\6v\0067\1\3\0\0\6n\6v\0066\1\3\0\0\6n\6v\0065\1\3\0\0\6n\6v\0064\1\3\0\0\6n\6v\0063\1\3\0\0\6n\6v\0062\1\3\0\0\6n\6v\0061\1\0\0\1\3\0\0\6n\6v\1\0\6\thint\2\18disable_mouse\2\14max_count\3\2\rmax_time\3Ë\a\24allow_different_key\1\17notification\2\0" },
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/hardtime.nvim",
+    url = "https://github.com/m4xshen/hardtime.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -130,6 +151,11 @@ _G.packer_plugins = {
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -140,10 +166,27 @@ _G.packer_plugins = {
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-surround"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -160,25 +203,20 @@ _G.packer_plugins = {
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  undotree = {
-    loaded = true,
-    path = "/home/png261/.local/share/nvim/site/pack/packer/start/undotree",
-    url = "https://github.com/mbbill/undotree"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/png261/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/png261/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/home/png261/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   vimwiki = {
     loaded = true,
@@ -188,10 +226,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gruvbox-material
-time([[Config for gruvbox-material]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme gruvbox-material\bcmd\bvim\0", "config", "gruvbox-material")
-time([[Config for gruvbox-material]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
+-- Config for: hardtime.nvim
+time([[Config for hardtime.nvim]], true)
+try_loadstring("\27LJ\2\nç\a\0\0\4\0P\0T5\0\0\0005\1\2\0005\2\1\0=\2\3\0015\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\0015\2\14\0=\2\15\0015\2\16\0=\2\17\0015\2\18\0=\2\19\0015\2\20\0=\2\21\0015\2\22\0=\2\23\0015\2\24\0=\2\25\0015\2\26\0=\2\27\0015\2\28\0=\2\29\0015\2\30\0=\2\31\0015\2 \0=\2!\0015\2\"\0=\2#\0015\2$\0=\2%\1=\1&\0005\1(\0005\2'\0=\2)\0015\2*\0=\2+\0015\2,\0=\2-\0015\2.\0=\2/\0015\0020\0=\0021\0015\0022\0=\0023\0015\0024\0=\0025\0015\0026\0=\0027\0015\0028\0=\0029\0015\2:\0=\2;\0015\2<\0=\2=\0015\2>\0=\2?\1=\1@\0005\1B\0005\2A\0=\2C\0015\2D\0=\2E\0015\2F\0=\2G\0015\2H\0=\2I\1=\1J\0005\1K\0=\1L\0006\1M\0'\3N\0B\1\2\0029\1O\1\18\3\0\0B\1\2\1K\0\1\0\nsetup\rhardtime\frequire\23disabled_filetypes\1\6\0\0\aqf\nnetrw\rNvimTree\tlazy\nmason\18disabled_keys\f<RIGHT>\1\3\0\0\5\6i\v<LEFT>\1\3\0\0\5\6i\v<DOWN>\1\3\0\0\5\6i\t<UP>\1\0\0\1\3\0\0\5\6i\20restricted_keys\n<C-P>\1\3\0\0\6n\6v\n<C-N>\1\3\0\0\6n\6v\n<C-M>\1\3\0\0\6n\6v\t<CR>\1\3\0\0\6n\6v\agk\1\3\0\0\6n\6v\agj\1\3\0\0\6n\6v\6+\1\3\0\0\6n\6v\6-\1\3\0\0\6n\6v\6l\1\3\0\0\6n\6v\6k\1\3\0\0\6n\6v\6j\1\3\0\0\6n\6v\6h\1\0\0\1\3\0\0\6n\6v\19resetting_keys\6P\1\2\0\0\6n\6p\1\2\0\0\6n\6Y\1\2\0\0\6n\6y\1\2\0\0\6n\6X\1\2\0\0\6n\6x\1\2\0\0\6n\6d\1\2\0\0\6n\6C\1\2\0\0\6n\6c\1\2\0\0\6n\0069\1\3\0\0\6n\6v\0068\1\3\0\0\6n\6v\0067\1\3\0\0\6n\6v\0066\1\3\0\0\6n\6v\0065\1\3\0\0\6n\6v\0064\1\3\0\0\6n\6v\0063\1\3\0\0\6n\6v\0062\1\3\0\0\6n\6v\0061\1\0\0\1\3\0\0\6n\6v\1\0\6\thint\2\18disable_mouse\2\14max_count\3\2\rmax_time\3Ë\a\24allow_different_key\1\17notification\2\0", "config", "hardtime.nvim")
+time([[Config for hardtime.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
