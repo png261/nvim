@@ -1,36 +1,28 @@
--- Learn the keybindings, see :help lsp-zero-keybindings
--- Learn to configure LSP servers, see :help lsp-zero-api-showcase
-local lsp = require('lsp-zero')
-lsp.preset('recommended')
+require("mason").setup()
 
-lsp.set_preferences({
-    sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
-    }
+local lsp = require("lsp-zero").preset({})
+
+vim.diagnostic.config({
+	virtual_text = false,
 })
 
-local cmp_mapping = lsp.defaults.cmp_mappings()
--- "unmap" <Tab>
-cmp_mapping['<Tab>'] = nil
+lsp.setup()
 
-lsp.setup_nvim_cmp({
-    completion = {
-        autocomplete = false
-    },
-    window = {
-        documentation = false,
-    },
-    mapping = cmp_mapping,
-})
+local cmp = require("cmp")
+local cmp_action = require("lsp-zero").cmp_action()
+require("luasnip.loaders.from_vscode").lazy_load()
 
-lsp.setup();
-
-local cmp = require 'cmp'
 cmp.setup({
-    window = {
-        documentation = cmp.config.disable
-    }
+	sources = {
+		{ name = "path" },
+		{ name = "nvim_lsp" },
+		{ name = "buffer", keyword_length = 3 },
+		{ name = "luasnip", keyword_length = 2 },
+	},
+	mapping = {
+		["<CR>"] = cmp.mapping.confirm({ select = false }),
+		["<C-e>"] = cmp.mapping.complete(),
+		["<C-f>"] = cmp_action.luasnip_jump_forward(),
+		["<C-b>"] = cmp_action.luasnip_jump_backward(),
+	},
 })

@@ -33,5 +33,5 @@ vim.g.netrw_keepdir = 0
 vim.g.netrw_winsize = 20
 vim.g.netrw_banner = 0
 
-vim.g.vimwiki_list = { {path = '~/.vimwiki/'} }
-vim.g.gruvbox_material_transparent_background=1
+vim.g.vimwiki_list = { { path = "~/.vimwiki/" } }
+vim.g.gruvbox_material_transparent_background = 1
