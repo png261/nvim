@@ -12,6 +12,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			{ "hrsh7th/cmp-buffer" },
+			{ "mfussenegger/nvim-jdtls" },
 			{ "hrsh7th/cmp-path" },
 			{ "saadparwaiz1/cmp_luasnip" },
 			{ "hrsh7th/cmp-nvim-lsp" },
@@ -69,13 +70,19 @@ return {
 				virtual_text = false,
 			})
 
-			local lsp = require("lsp-zero").preset({})
+			local lsp = require("lsp-zero")
 
 			lsp.on_attach(function(client, bufnr)
 				lsp.default_keymaps({ buffer = bufnr })
+
+				vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", opts)
+				vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<cr>", opts)
+				vim.keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<cr>", opts)
 			end)
 
 			require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+
+			lsp.skip_server_setup({ "jdtls" })
 
 			lsp.setup()
 		end,

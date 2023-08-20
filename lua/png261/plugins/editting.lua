@@ -1,5 +1,5 @@
 return {
-	{ "jiangmiao/auto-pairs" },
+	-- { "jiangmiao/auto-pairs" },
 	{
 		"kylechui/nvim-surround",
 		config = function()
